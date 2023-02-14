@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+#preloader_container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height:100vh;
+}
+#preloader_container .preloader span{
+    width: 5px;
+    height:100px;
+    background: purple;
+    display:inline-block;
+    margin: 0 4px;
+    animation-name: preloader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes preloader{
+    from{
+        transform: scaleX(01)
+    }
+    to{
+      transform: scaleY(0);  
+    }
+}
